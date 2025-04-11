@@ -139,7 +139,7 @@ LocalisationMessages_t russian = {
     L"Статус Dashlaunch: Ошибка! - Не получилось загрузить launch.xex. Ошибка данных раздела!",
     L"Статус Dashlaunch: Ошибка! - Статус: %X",
     // Dump 1BL Notify - Уведомление о сохранении первого загрузчика
-    L"[Dump1blRomToFile] Ошибка! Не-нулевой результат от Hvx...",
+    L"[Dump1blRomToFile] Ошибка! Не-нулевой результат от гипервизора...",
     L"Сохранил в %S-1bl.bin",
     L"[Dump1blRomToFile] Ошибка! Не удалось записать файл...",
     // Save Console Info Notify - Уведомления о сохранении информации консоли
