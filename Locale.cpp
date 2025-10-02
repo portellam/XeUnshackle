@@ -66,9 +66,36 @@ LocalisationMessages_t spanish = {
     L"Presionar " GLYPH_BACK_BUTTON L" para salir"
 };
 
-//LocalisationMessages_t canadian_french = {
-//    
-//};
+LocalisationMessages_t canadian_french = {
+// Error Messagebox
+L"Malheureusement, une erreur est survenue pendant l'exécution de l'étape %i\n\nL'application va maintenant se fermer",
+L"D'accord",
+// Dashlaunch load status
+L"Dashlaunch : Chargé ! %ls",
+L"[Mode disque dur]",
+L"[Mode USB] NE PAS DÉBRANCHER LA CLÉ USB !",
+L"Dashlaunch : ÉCHEC ! - Impossible d’écrire lhelper.xex. Erreur de données de section !",
+L"Dashlaunch : ÉCHEC ! - Impossible d’écrire lhelper.xex. Erreur de montage !",
+L"Dashlaunch : ÉCHEC ! - Impossible d’écrire lhelper.xex sur le périphérique de stockage.",
+L"Dashlaunch : ÉCHEC ! - Impossible de charger launch.xex. Erreur de données de section !",
+L"Dashlaunch : ÉCHEC ! - Statut : %X",
+// Dump 1BL Notify
+L"[Dump1blRomToFile] ÉCHEC ! Résultat non nul retourné par Hvx...",
+L"Enregistré sous %S-1bl.bin",
+L"[Dump1blRomToFile] ÉCHEC ! Impossible d’écrire le fichier...",
+// Save Console Info Notify
+L"Enregistré sous ConsoleInfo.txt",
+L"Échec de l’enregistrement !",
+// Save Orig MAC
+L"Adresse MAC originale sauvegardée dans OriginalMACAddress.bin",
+L"Échec de la sauvegarde de l'adresse MAC originale !",
+// Main Screen Text
+L"Tous les patchs ont été appliqués !\nLes fonctions JTAG/RGH normales devraient maintenant être actives sur votre console.\n\nCET ÉTAT N’EST PAS PERMANENT !\nVotre console retournera à son état d’origine une fois éteinte.\nIl est FORTEMENT recommandé de faire une copie de votre NAND maintenant !",
+L"Tous les plugins définis dans launch.ini seront chargés quand vous quitterez l'application.\nLiveBlock devrait fonctionner maintenant s’il est activé dans launch.ini.\nBranchez votre câble réseau avant de quitter pour permettre l’authentification des services stealth.",
+GLYPH_X_BUTTON L" Sauvegarder les infos dans un fichier",
+GLYPH_Y_BUTTON L" Extraire 1BL dans un fichier",
+L"Appuie sur " GLYPH_BACK_BUTTON L" pour quitter"
+};
 
 LocalisationMessages_t brazilian_portuguese = {
     // Error Messagebox
@@ -102,94 +129,264 @@ LocalisationMessages_t brazilian_portuguese = {
     L"Pressione " GLYPH_BACK_BUTTON L" para sair"    
 };
 
-//LocalisationMessages_t portuguese = {
-//    
-//};
+LocalisationMessages_t portuguese = {
+// Error Messagebox
+L"Infelizmente, ocorreu um erro durante a execução da etapa %i\n\nO aplicativo será encerrado agora",
+L"Entendido",
+// Dashlaunch load status
+L"Dashlaunch: Carregado! %ls",
+L"[Modo HDD]",
+L"[Modo USB] NÃO REMOVA O USB!",
+L"Dashlaunch: FALHA! - Falha ao gravar lhelper.xex. Erro nos dados da seção!",
+L"Dashlaunch: FALHA! - Falha ao gravar lhelper.xex. Erro de montagem!",
+L"Dashlaunch: FALHA! - Falha ao gravar lhelper.xex no dispositivo de armazenamento.",
+L"Dashlaunch: FALHA! - Falha ao carregar launch.xex. Erro nos dados da seção!",
+L"Dashlaunch: FALHA! - Status: %X",
+// Dump 1BL Notify
+L"[Dump1blRomToFile] FALHA! Resultado diferente de zero retornado pelo Hvx...",
+L"Salvo como %S-1bl.bin",
+L"[Dump1blRomToFile] FALHA! Não foi possível gravar o arquivo...",
+// Save Console Info Notify
+L"Salvo como ConsoleInfo.txt",
+L"Falha ao salvar!",
+L"Endereço MAC original salvo como OriginalMACAddress.bin",
+L"Falha ao salvar o endereço MAC original!",
+// Main Screen Text
+L"Todos os patches foram aplicados!\nAs funcionalidades padrão de JTAG/RGH agora devem estar disponíveis no seu console.\n\nISSO NÃO É PERMANENTE!\nSeu console voltará ao estado original e sem modificações após ser desligado.\nÉ ALTAMENTE recomendável que você faça agora um backup da sua NAND!",
+L"Todos os plugins definidos no launch.ini serão carregados quando você sair deste aplicativo.\nO LiveBlock deve estar funcionando agora, se estiver ativado no launch.ini.\nConecte seu cabo de rede antes de sair para permitir que os serviços stealth se autentiquem corretamente.",
+GLYPH_X_BUTTON L" Salvar informações em arquivo",
+GLYPH_Y_BUTTON L" Fazer dump do 1BL para arquivo",
+L"Pressione " GLYPH_BACK_BUTTON L" para sair"
 
-//LocalisationMessages_t german = {
-//    
-//};
+};
 
-//LocalisationMessages_t swedish = {
-//    
-//};
+LocalisationMessages_t german = {
+// Error Messagebox
+L"Leider ist während Schritt %i ein Fehler aufgetreten\n\nDie Anwendung wird jetzt beendet",
+L"Verstanden",
+// Dashlaunch load status
+L"Dashlaunch: Geladen! %ls",
+L"[HDD-Modus]",
+L"[USB-Modus] USB NICHT ENTFERNEN!",
+L"Dashlaunch: FEHLGESCHLAGEN! - Konnte lhelper.xex nicht schreiben. Abschnittsdatenfehler!",
+L"Dashlaunch: FEHLGESCHLAGEN! - Konnte lhelper.xex nicht schreiben. Einbindungsfehler!",
+L"Dashlaunch: FEHLGESCHLAGEN! - Konnte lhelper.xex nicht auf das Speichermedium schreiben.",
+L"Dashlaunch: FEHLGESCHLAGEN! - Konnte launch.xex nicht laden. Abschnittsdatenfehler!",
+L"Dashlaunch: FEHLGESCHLAGEN! - Status: %X",
+// Dump 1BL Notify
+L"[Dump1blRomToFile] FEHLGESCHLAGEN! Nicht-null Ergebnis von Hvx...",
+L"Gespeichert als %S-1bl.bin",
+L"[Dump1blRomToFile] FEHLGESCHLAGEN! Konnte Datei nicht schreiben...",
+// Save Console Info Notify
+L"Gespeichert als ConsoleInfo.txt",
+L"Speichern fehlgeschlagen!",
+L"Original-MAC-Adresse gespeichert in OriginalMACAddress.bin",
+L"Originale MAC-Adresse konnte nicht gespeichert werden!",
+// Main Screen Text
+L"Alle Patches wurden angewendet!\nNormale JTAG/RGH-Funktionalität sollte jetzt möglich sein.\n\nDIES IST NICHT PERMANENT!\nDie Konsole kehrt nach dem Ausschalten in den Originalzustand zurück.\nEs wird DRINGEND empfohlen, jetzt ein NAND-Backup zu erstellen!",
+L"Alle in launch.ini festgelegten Plugins werden beim Verlassen der App geladen.\nLiveBlock sollte nun funktionieren, wenn es in der launch.ini aktiviert wurde.\nBitte Netzwerkkabel einstecken, bevor du die App verlässt, um eine erfolgreiche Stealth-Authentifizierung zu ermöglichen.",
+GLYPH_X_BUTTON L" Informationen in Datei speichern",
+GLYPH_Y_BUTTON L" 1BL in Datei speichern",
+L"Drücke " GLYPH_BACK_BUTTON L" zum Beenden"
+    
+};
+
+LocalisationMessages_t swedish = {
+// Error Messagebox
+L"Ett fel inträffade tyvärr under steg %i\n\nAppen kommer nu att avslutas",
+L"Förstått",
+// Dashlaunch load status
+L"Dashlaunch: Laddad! %ls",
+L"[HDD-läge]",
+L"[USB-läge] DRA INTE UT USB!",
+L"Dashlaunch: MISSLYCKADES! - Kunde inte skriva lhelper.xex. Sektionsdatafel!",
+L"Dashlaunch: MISSLYCKADES! - Kunde inte skriva lhelper.xex. Monteringsfel!",
+L"Dashlaunch: MISSLYCKADES! - Kunde inte skriva lhelper.xex till lagringsenheten.",
+L"Dashlaunch: MISSLYCKADES! - Kunde inte läsa in launch.xex. Sektionsdatafel!",
+L"Dashlaunch: MISSLYCKADES! - Status: %X",
+// Dump 1BL Notify
+L"[Dump1blRomToFile] MISSLYCKADES! Hvx returnerade ett icke-noll resultat...",
+L"Sparad som %S-1bl.bin",
+L"[Dump1blRomToFile] MISSLYCKADES! Kunde inte skriva filen...",
+// Save Console Info Notify
+L"Sparad som ConsoleInfo.txt",
+L"Misslyckades med att spara!",
+L"Original-MAC sparad som OriginalMACAddress.bin",
+L"Misslyckades med att spara original-MAC!",
+L"Alla patchar har nu applicerats!\nVanlig JTAG/RGH-funktionalitet bör nu fungera på din konsol.\n\nDETTA ÄR INTE PERMANENT!\nDin konsol återgår till originalskick när den stängs av.\nDet rekommenderas STARKT att du nu gör en säkerhetskopia av din NAND!",
+L"Alla plugins angivna i launch.ini laddas när du avslutar appen.\nLiveBlock bör fungera nu om det är aktiverat i launch.ini.\nAnslut nätverkskabeln innan du avslutar för korrekt autentisering med stealth.",
+GLYPH_X_BUTTON L" Spara information till fil",
+GLYPH_Y_BUTTON L" Dumpa 1BL till fil",
+L"Tryck på " GLYPH_BACK_BUTTON L" för att avsluta"
+    
+};
 
 LocalisationMessages_t italian = {
-    // Error Messagebox
-    L"Sfortunatamente si \u00E8 verificato un errore durante l'esecuzione della Fase %i\n\nL'applicazione verr\u00E0 chiusa",
-    L"Ho capito",
+// Error Messagebox
+L"Purtroppo si è verificato un errore durante la fase %i\n\nL'app verrà ora chiusa",
+L"Capito",
+// Dashlaunch load status
+L"Dashlaunch: Caricato! %ls",
+L"[Modalità HDD]",
+L"[Modalità USB] NON SCOLLEGARE LA USB!",
+L"Dashlaunch: FALLITO! - Impossibile scrivere lhelper.xex. Errore nei dati della sezione!",
+L"Dashlaunch: FALLITO! - Impossibile scrivere lhelper.xex. Errore di montaggio!",
+L"Dashlaunch: FALLITO! - Impossibile scrivere lhelper.xex sul dispositivo di archiviazione.",
+L"Dashlaunch: FALLITO! - Impossibile caricare launch.xex. Errore nei dati della sezione!",
+L"Dashlaunch: FALLITO! - Stato: %X",
+// Dump 1BL Notify
+L"[Dump1blRomToFile] FALLITO! Risultato non nullo da Hvx...",
+L"Salvato come %S-1bl.bin",
+L"[Dump1blRomToFile] FALLITO! Impossibile scrivere il file...",
+// Save Console Info Notify
+L"Salvato come ConsoleInfo.txt",
+L"Salvataggio fallito!",
+L"MAC originale salvato in OriginalMACAddress.bin",
+L"Impossibile salvare il MAC originale!",
+// Main Screen Text
+L"Tutte le patch sono state applicate!\nLa funzionalità JTAG/RGH standard dovrebbe ora essere disponibile sul tuo sistema.\n\nQUESTO NON È PERMANENTE!\nLa console tornerà allo stato originale dopo lo spegnimento.\nÈ FORTEMENTE consigliato eseguire subito un backup della NAND!",
+L"Tutti i plugin definiti in launch.ini verranno caricati quando esci dall'app.\nLiveBlock dovrebbe essere attivo ora se abilitato nel file launch.ini.\nCollega il cavo Ethernet prima di uscire per consentire l'autenticazione corretta dei servizi stealth.",
+GLYPH_X_BUTTON L" Salva informazioni su file",
+GLYPH_Y_BUTTON L" Esegui dump del 1BL su file",
+L"Premi " GLYPH_BACK_BUTTON L" per uscire"
+    
+};
+
+
+
+//Use Romanized or Latin Approximations (Temporary)
+
+
+//No romanization needed — just stripped accents where needed for maximum compatibility.
+LocalisationMessages_t polish = {
+ // Error Messagebox
+    L"Niestety, wystapil blad podczas etapu %i\n\nAplikacja zostanie teraz zamknieta",
+    L"Rozumiem",
     // Dashlaunch load status
-    L"Dashlaunch: Caricato! %ls",
-    L"[Modalit\u00E0 HDD]",
-    L"[Modalit\u00E0 USB] NON SCOLLEGARE L'USB!",
-    L"Dashlaunch: FALLITO! - Impossibile scrivere lhelper.xex. Errore nei dati della sezione.",
-    L"Dashlaunch: FALLITO! - Impossibile scrivere lhelper.xex. Errore durante il montaggio.",
-    L"Dashlaunch: FALLITO! - Impossibile scrivere lhelper.xex sul dispositivo di archiviazione.",
-    L"Dashlaunch: FALLITO! - Impossibile caricare launch.xex. Errore nei dati della sezione.",
-    L"Dashlaunch: FALLITO! - Stato: %X",
+    L"Dashlaunch: Zaladowano! %ls",
+    L"[Tryb HDD]",
+    L"[Tryb USB] NIE ODLACZAJ USB!",
+    L"Dashlaunch: NIEUDANE! - Nie mozna zapisac lhelper.xex. Blad danych sekcji!",
+    L"Dashlaunch: NIEUDANE! - Nie mozna zapisac lhelper.xex. Blad montazu!",
+    L"Dashlaunch: NIEUDANE! - Nie mozna zapisac lhelper.xex na urzadzeniu pamieci.",
+    L"Dashlaunch: NIEUDANE! - Nie mozna zaladowac launch.xex. Blad danych sekcji!",
+    L"Dashlaunch: NIEUDANE! - Status: %X",
     // Dump 1BL Notify
-    L"[Dump1blRomToFile] FALLITO! Risultato non nullo da Hvx...",
-    L"Salvato in %S-1bl.bin",
-    L"[Dump1blRomToFile] FALLITO! Impossibile scrivere il file...",
+    L"[Dump1blRomToFile] NIEUDANE! Zwracany wynik Hvx nie jest zerem...",
+    L"Zapisano jako %S-1bl.bin",
+    L"[Dump1blRomToFile] NIEUDANE! Nie udalo sie zapisac pliku...",
     // Save Console Info Notify
-    L"Salvato in ConsoleInfo.txt",
-    L"Salvataggio fallito!",
+    L"Zapisano jako ConsoleInfo.txt",
+    L"Zapis nie powiodl sie!",
     // Save Orig MAC
-    L"MAC originale salvato in OriginalMACAddress.bin",
-    L"Impossibile salvare il MAC originale!",
+    L"Oryginalny MAC zapisany jako OriginalMACAddress.bin",
+    L"Nie udalo sie zapisac oryginalnego MAC!",
     // Main Screen Text
-    L"Tutte le patch sono state applicate!\nOra la normale funzionalit\u00E0 JTAG/RGH dovrebbe essere operativa sul tuo sistema.\n\nQUESTO CAMBIAMENTO NON \u00C8 PERMANENTE!\nLa tua console torner\u00E0 a uno stato completamente originale non appena verr\u00E0 spenta.\n\u00C8 ALTAMENTE consigliato effettuare subito un dump della tua NAND!",
-    L"I plugin configurati in launch.ini verranno caricati all'uscita dall'applicazione.\nSe abilitato in launch.ini, LiveBlock dovrebbe ora funzionare correttamente.\nCollega il cavo Ethernet prima di uscire, per permettere ai moduli stealth di autenticarsi correttamente.",
-    GLYPH_X_BUTTON L" Salva le informazioni su file",
-    GLYPH_Y_BUTTON L" Esegui il dump di 1BL su file",
-    L"Premi " GLYPH_BACK_BUTTON L" per uscire"
+    L"Wszystkie latki zostaly zastosowane!\nStandardowe funkcje JTAG/RGH powinny dzialac.\n\nTO NIE JEST TRWALE!\nPo wylaczeniu konsola wroci do stanu fabrycznego.\nZalecane jest zrobienie kopii NAND!",
+    L"Wszystkie pluginy z launch.ini zostana zaladowane po wyjsciu.\nLiveBlock powinien dzialac, jesli aktywowany.\nPodlacz kabel sieciowy przed wyjsciem.",
+    GLYPH_X_BUTTON L" Zapisz info do pliku",
+    GLYPH_Y_BUTTON L" Zrzuc 1BL do pliku",
+    L"Wcisnij " GLYPH_BACK_BUTTON L" aby wyjsc"    
 };
 
-
-// Launguages below here won't work without a new font to support the characters???
-
-//LocalisationMessages_t polish = {
-//    
-//};
-
+//Romanized Cyrillic russian
 LocalisationMessages_t russian = {
-    // Error Messagebox - Ошибка при каком-либо этапе
-    L"\u041A \u0441\u043E\u0436\u0430\u043B\u0435\u043D\u0438\u044E \u043F\u0440\u043E\u0438\u0437\u043E\u0448\u043B\u0430 \u043E\u0448\u0438\u0431\u043A\u0430 \u043F\u0440\u0438 %i \u044D\u0442\u0430\u043F\u0435.\n\n\u041F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0435 \u0441\u0435\u0439\u0447\u0430\u0441 \u0437\u0430\u043A\u0440\u043E\u0435\u0442\u0441\u044F.",
-    L"\u041E\u041A :(",
-    // Dashlaunch load status - статус DashLaunch
-    L"\u0421\u0442\u0430\u0442\u0443\u0441 Dashlaunch: \u0417\u0430\u0433\u0440\u0443\u0436\u0435\u043D! %ls",
-    L"[\u0420\u0435\u0436\u0438\u043C \u0436\u0435\u0441\u0442\u043A\u043E\u0433\u043E \u0434\u0438\u0441\u043A\u0430]",
-    L"[\u0420\u0435\u0436\u0438\u043C \u0444\u043B\u0435\u0448\u043A\u0438] \u041D\u0415 \u041E\u0422\u041A\u041B\u042E\u0427\u0410\u0419\u0422\u0415 \u0424\u041B\u0415\u0428\u041A\u0423!",
-    L"\u0421\u0442\u0430\u0442\u0443\u0441 Dashlaunch: \u041E\u0448\u0438\u0431\u043A\u0430! - \u041D\u0435 \u043F\u043E\u043B\u0443\u0447\u0438\u043B\u043E\u0441\u044C \u0437\u0430\u043F\u0438\u0441\u0430\u0442\u044C lhelper.xex. \u041E\u0448\u0438\u0431\u043A\u0430 \u0434\u0430\u043D\u043D\u044B\u0445 \u0440\u0430\u0437\u0434\u0435\u043B\u0430!",
-    L"\u0421\u0442\u0430\u0442\u0443\u0441 Dashlaunch: \u041E\u0448\u0438\u0431\u043A\u0430! - \u041D\u0435 \u043F\u043E\u043B\u0443\u0447\u0438\u043B\u043E\u0441\u044C \u0437\u0430\u043F\u0438\u0441\u0430\u0442\u044C lhelper.xex. \u041E\u0448\u0438\u0431\u043A\u0430 \u043C\u043E\u043D\u0442\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F!",
-    L"\u0421\u0442\u0430\u0442\u0443\u0441 Dashlaunch: \u041E\u0448\u0438\u0431\u043A\u0430! - \u041D\u0435 \u043F\u043E\u043B\u0443\u0447\u0438\u043B\u043E\u0441\u044C \u0437\u0430\u043F\u0438\u0441\u0430\u0442\u044C lhelper.xex \u0432 \u0445\u0440\u0430\u043D\u0438\u043B\u0438\u0449\u0435.",
-    L"\u0421\u0442\u0430\u0442\u0443\u0441 Dashlaunch: \u041E\u0448\u0438\u0431\u043A\u0430! - \u041D\u0435 \u043F\u043E\u043B\u0443\u0447\u0438\u043B\u043E\u0441\u044C \u0437\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u044C launch.xex. \u041E\u0448\u0438\u0431\u043A\u0430 \u0434\u0430\u043D\u043D\u044B\u0445 \u0440\u0430\u0437\u0434\u0435\u043B\u0430!",
-    L"\u0421\u0442\u0430\u0442\u0443\u0441 Dashlaunch: \u041E\u0448\u0438\u0431\u043A\u0430! - \u0421\u0442\u0430\u0442\u0443\u0441: %X",
-    // Dump 1BL Notify - Уведомление о сохранении первого загрузчика
-    L"[Dump1blRomToFile] \u041E\u0448\u0438\u0431\u043A\u0430! \u041D\u0435-\u043D\u0443\u043B\u0435\u0432\u043E\u0439 \u0440\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442 \u043E\u0442 \u0433\u0438\u043F\u0435\u0440\u0432\u0438\u0437\u043E\u0440\u0430...",
-    L"\u0421\u043E\u0445\u0440\u0430\u043D\u0438\u043B \u0432 %S-1bl.bin",
-    L"[Dump1blRomToFile] \u041E\u0448\u0438\u0431\u043A\u0430! \u041D\u0435 \u0443\u0434\u0430\u043B\u043E\u0441\u044C \u0437\u0430\u043F\u0438\u0441\u0430\u0442\u044C \u0444\u0430\u0439\u043B...",
-    // Save Console Info Notify - Уведомления о сохранении информации консоли
-    L"\u0421\u043E\u0445\u0440\u0430\u043D\u0438\u043B \u0432 ConsoleInfo.txt",
-    L"\u041D\u0435 \u0443\u0434\u0430\u043B\u043E\u0441\u044C \u0441\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044E \u043E \u043A\u043E\u043D\u0441\u043E\u043B\u0438!",
-    // Save Orig MAC - сохранение оригинального MAC-адреса
-    L"\u041E\u0440\u0438\u0433\u0438\u043D\u0430\u043B\u044C\u043D\u044B\u0439 MAC-\u0430\u0434\u0440\u0435\u0441 \u0441\u043E\u0445\u0440\u0430\u043D\u0435\u043D \u0432 OriginalMACAddress.bin",
-    L"\u041D\u0435 \u0443\u0434\u0430\u043B\u043E\u0441\u044C \u0441\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C MAC-\u0430\u0434\u0440\u0435\u0441!",
-    // Main Screen Text - текст главного экрана
-    L"\u0412\u0441\u0435 \u043F\u0430\u0442\u0447\u0438 \u043F\u0440\u0438\u043C\u0435\u043D\u0435\u043D\u044B!\n\u0424\u0443\u043D\u043A\u0446\u0438\u043E\u043D\u0430\u043B RGH/JTAG \u0434\u043E\u043B\u0436\u0435\u043D \u0440\u0430\u0431\u043E\u0442\u0430\u0442\u044C \u043D\u0430 \u0432\u0430\u0448\u0435\u0439 \u043A\u043E\u043D\u0441\u043E\u043B\u0438, \u041D\u041E \u041D\u0415 \u041F\u041E\u0421\u0422\u041E\u042F\u041D\u041D\u041E!\n\u0412\u0430\u0448\u0430 \u043A\u043E\u043D\u0441\u043E\u043B\u044C \u0432\u0435\u0440\u043D\u0435\u0442\u0441\u044F \u0432 \u0441\u0442\u043E\u043A\u043E\u0432\u043E\u0435 \u0441\u043E\u0441\u0442\u043E\u044F\u043D\u0438\u0435 \u043F\u043E\u0441\u043B\u0435 \u043F\u0435\u0440\u0435\u0437\u0430\u0433\u0440\u0443\u0437\u043A\u0438.\n\u041E\u0427\u0415\u041D\u042C \u0436\u0435\u043B\u0430\u0442\u0435\u043B\u044C\u043D\u043E \u0441\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C \u0444\u043B\u0435\u0448-\u043F\u0430\u043C\u044F\u0442\u044C!",
-    L"\u0412\u0441\u0435 \u043F\u043B\u0430\u0433\u0438\u043D\u044B \u0443\u043A\u0430\u0437\u0430\u043D\u044B\u0435 \u0432 launch.ini \u0437\u0430\u0433\u0440\u0443\u0437\u044F\u0442\u0441\u044F \u043F\u043E\u0441\u043B\u0435 \u0432\u044B\u0445\u043E\u0434\u0430 \u0438\u0437 \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F.\nLiveBlock \u0434\u043E\u043B\u0436\u0435\u043D \u0440\u0430\u0431\u043E\u0442\u0430\u0442\u044C \u0435\u0441\u043B\u0438 \u0443\u043A\u0430\u0437\u0430\u043D \u0432 launch.ini.\n\u041F\u043E\u0434\u043A\u043B\u044E\u0447\u0438\u0442\u0435 \u0438\u043D\u0442\u0435\u0440\u043D\u0435\u0442-\u043A\u0430\u0431\u0435\u043B\u044C \u0438\u043B\u0438 WiFi \u0441\u0435\u0439\u0447\u0430\u0441 \u0447\u0442\u043E\u0431\u044B \u0434\u0430\u0442\u044C \u0441\u0442\u0435\u043B\u0441-\u0441\u0435\u0440\u0432\u0435\u0440\u0430\u043C \u0430\u0443\u0442\u0435\u043D\u0442\u0438\u0444\u0438\u0446\u0438\u0440\u043E\u0432\u0430\u0442\u044C\u0441\u044F.",
-    GLYPH_X_BUTTON L" \u0421\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044E \u043E \u043A\u043E\u043D\u0441\u043E\u043B\u0438 \u0432 \u0444\u0430\u0439\u043B",
-    GLYPH_Y_BUTTON L" \u0421\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C \u043F\u0435\u0440\u0432\u044B\u0439 \u0437\u0430\u0433\u0440\u0443\u0437\u0447\u0438\u043A \u0432 \u0444\u0430\u0439\u043B",
-    L"\u041D\u0430\u0436\u043C\u0438\u0442\u0435 " GLYPH_BACK_BUTTON L" \u0447\u0442\u043E\u0431\u044B \u0432\u044B\u0439\u0442\u0438"
+    // Error Messagebox
+    L"K sozhaleniyu, proizoshla oshibka vo vremya etapa %i\n\nPrilozhenie seychas zakroetsya",
+    L"Ponimat’",
+    // Dashlaunch load status
+    L"Dashlaunch: Zagruzheno! %ls",
+    L"[Rezhim HDD]",
+    L"[Rezhim USB] NE OTKLYUCHAY USB!",
+    L"Dashlaunch: OShIBKA! - Ne udalos’ zapisat’ lhelper.xex. Oshibka dannykh sektsii!",
+    L"Dashlaunch: OShIBKA! - Ne udalos’ zapisat’ lhelper.xex. Oshibka montazha!",
+    L"Dashlaunch: OShIBKA! - Ne udalos’ zapisat’ lhelper.xex na ustroystvo khraneniya.",
+    L"Dashlaunch: OShIBKA! - Ne udalos’ zagruzit’ launch.xex. Oshibka dannykh sektsii!",
+    L"Dashlaunch: OShIBKA! - Status: %X",
+    // Dump 1BL Notify
+    L"[Dump1blRomToFile] OShIBKA! Hvx vernul ne-nulevyy rezultat...",
+    L"Fayl sokhranen kak %S-1bl.bin",
+    L"[Dump1blRomToFile] OShIBKA! Ne udalos’ zapisat’ fayl...",
+    // Save Console Info Notify
+    L"Fayl sokhranen kak ConsoleInfo.txt",
+    L"Ne udalos’ sokhranit’!",
+    // Save Orig MAC
+    L"Original’nyy MAC sokhranen kak OriginalMACAddress.bin",
+    L"Ne udalos’ sokhranit’ MAC!",
+    // Main Screen Text
+    L"Vse patchi byli primeneni!\nFunktsii JTAG/RGH teper' dolzhny rabotat’.\n\nETO NE POSTOYANNO!\nKonsol’ vernetsya v zavodskoye sostoyaniye posle vyklyucheniya.\nNastoyatel’no rekomenduetsya sdelat’ rezervnuyu kopiyu NAND!",
+    L"Vse plaginy iz launch.ini budut zagruzheny pri vykhode.\nLiveBlock dolzhen rabotat’, esli vklyuchen.\nPodklyuchite Ethernet kabel pered vykhodom.",
+    GLYPH_X_BUTTON L" Sokhranit’ informatsiyu v fayl",
+    GLYPH_Y_BUTTON L" Sdelat’ dump 1BL v fayl",
+    L"Nazhmi " GLYPH_BACK_BUTTON L" dlya vykhoda"
+   
 };
 
-//LocalisationMessages_t korean = {
-//    
-//};
+//Romanized
+LocalisationMessages_t korean = {
+    // Error Messagebox
+    L"Yuchihage, %i beonjjae stage jung erroga balseonghaessseubnida\n\nAppi jigeum jonglyohabnida",
+    L"Araessseubnida",
+    // Dashlaunch load status
+    L"Dashlaunch: Load wanryo! %ls",
+    L"[HDD mode]",
+    L"[USB mode] USB-reul ppajji maseyo!",
+    L"Dashlaunch: SILPAE! - lhelper.xex-eul ssujil su eopseubnida. Section data error!",
+    L"Dashlaunch: SILPAE! - lhelper.xex ssugi SILPAE. Mount error!",
+    L"Dashlaunch: SILPAE! - lhelper.xex-reul jejangjangchi-e ssujil su eopseubnida.",
+    L"Dashlaunch: SILPAE! - launch.xex load SILPAE. Section data error!",
+    L"Dashlaunch: SILPAE! - Status: %X",
+    // Dump 1BL Notify
+    L"[Dump1blRomToFile] SILPAE! Hvxga 0 anin gyeolgwa-reul naetam...",
+    L"%S-1bl.bin-e jeojanghaessseubnida",
+    L"[Dump1blRomToFile] SILPAE! Fail-leul ssujil su eopseubnida...",
+    // Save Console Info Notify
+    L"ConsoleInfo.txt-ro jeojanghaessseubnida",
+    L"Jeojang SILPAE!",
+    // Save Orig MAC
+    L"Original MAC, OriginalMACAddress.bin-e jeojanghaessseubnida",
+    L"Original MAC jeojang SILPAE!",
+    // Main Screen Text
+    L"Modeun paechiga jeoyong dwaessseubnida!\nJTAG/RGH gineung-i hyeonjaehwa dwaessseubnida.\n\nI geos-eun yeonggujeog-i anibnida!\nKonsol-eul kkeumyeon chobonsangtaelo dol-a-gabnida.\nNAND-reul backuphaneun geos-eul ganglyohan-gamnida!",
+    L"launch.ini-e jeong-ui doen modeun peullagin-eun app-reul naomyeon load doebnida.\nlaunch.ini-e seonghwadoen LiveBlockdo jigeum hwalseong jung-il su issseubnida.\nJonglyohagi jeon-e Ethernet kaebeurul yeolchyeojuseyo.",
+    GLYPH_X_BUTTON L" Jeongbo-leul failro jeojang",
+    GLYPH_Y_BUTTON L" 1BL-eul failro dump",
+    L"BACK beuteun-eul nulleo jonglyohae juseyo"
+    
+};
 
-//LocalisationMessages_t chinese_simplified = {
-//    
-//};
+//Pinyin Romanized
+LocalisationMessages_t chinese_simplified = {
+    // Error Messagebox
+    L"Henshang, zai zhixing di %i bu shihou fasheng cuowu\n\nYingyong jiang guanbi",
+    L"Mingbai",
+    // Dashlaunch load status
+    L"Dashlaunch: Yijia zai! %ls",
+    L"[Yingpan moshi]",
+    L"[USB moshi] QING BUYAO BAXIA USB!",
+    L"Dashlaunch: SHIBAI! - Wu fa xieru lhelper.xex. qumu shuju cuowu!",
+    L"Dashlaunch: SHIBAI! - Wu fa xieru lhelper.xex. guazai cuowu!",
+    L"Dashlaunch: SHIBAI! - Wu fa xieru lhelper.xex dao cunchushebei.",
+    L"Dashlaunch: SHIBAI! - Wu fa jiazai launch.xex. qumu shuju cuowu!",
+    L"Dashlaunch: SHIBAI! - Zhuangtai: %X",
+    // Dump 1BL Notify
+    L"[Dump1blRomToFile] SHIBAI! Hvx fanhui fei ling jieguo...",
+    L"Baocun dao %S-1bl.bin",
+    L"[Dump1blRomToFile] SHIBAI! Wu fa xieru wenjian...",
+    // Save Console Info Notify
+    L"Baocun dao ConsoleInfo.txt",
+    L"Baocun shibai!",
+    // Save Orig MAC
+    L"Yuanshi MAC baocun dao OriginalMACAddress.bin",
+    L"Wufa baocun yuanshi MAC!",
+    // Main Screen Text
+    L"Suo you patch yi jia zai!\nXitong yinggai keyi zhengchang shiyong JTAG/RGH gongneng.\n\nZHE BUSHI YONGJIU DE!\nGuanji hou, xitong jiang fuyuan chuchang zhuangtai.\nQianglie tuijian xianzai beifen NAND!",
+    L"Tuichu chengxu shi, launch.ini zhong de plugin jiang bei jiazai.\nRuguo launch.ini zhong qidong le LiveBlock, xianzai yinggai keyi yunyong.\nTuichu qian qing lianjie wangluo yinxian.",
+    GLYPH_X_BUTTON L" Baocun xinxi dao wenjian",
+    GLYPH_Y_BUTTON L" Daochu 1BL dao wenjian",
+    L"An " GLYPH_BACK_BUTTON L" tuichu"
+    
+};
 
 LocalisationMessages_t* currentLocalisation = &english; // &spanish;
 
@@ -204,40 +401,40 @@ VOID SetLocale()
     case XC_LANGUAGE_SPANISH:
         currentLocalisation = &spanish;
         break;
-    //case XC_LANGUAGE_GERMAN:
-    //    currentLocalisation = &german;
-    //    break;
-    //case XC_LANGUAGE_FRENCH:
-    //    currentLocalisation = &canadian_french;
-    //    break;
-    //case XC_LANGUAGE_SWEDISH:
-    //    currentLocalisation = &swedish;
-    //    break;
-    //case XC_LANGUAGE_ITALIAN:
-    //    currentLocalisation = &italian;
-    //    break;
+    case XC_LANGUAGE_GERMAN:
+        currentLocalisation = &german;
+        break;
+    case XC_LANGUAGE_FRENCH:
+        currentLocalisation = &canadian_french;
+        break;
+    case XC_LANGUAGE_SWEDISH:
+        currentLocalisation = &swedish;
+        break;
+    case XC_LANGUAGE_ITALIAN:
+        currentLocalisation = &italian;
+        break;
     case XC_LANGUAGE_PORTUGUESE:
         currentLocalisation = &brazilian_portuguese;
-        //waiting for the translation in Portuguese
-        //if (XGetLocale() == XC_LOCALE_BRAZIL)
-        //    currentLocalisation = &brazilian_portuguese;
-        //else
-        //    currentLocalisation = &portuguese;
+        
+        if (XGetLocale() == XC_LOCALE_BRAZIL)
+            currentLocalisation = &brazilian_portuguese;
+        else
+            currentLocalisation = &portuguese;
         break;
     
-    // === UNSUPPORTED WITHOUT NEW FONT ===
-    //case XC_LANGUAGE_POLISH:
-    //    currentLocalisation = &polish;
-    //    break;
-    //case XC_LANGUAGE_RUSSIAN:
-    //    currentLocalisation = &russian;
-    //    break;
-    //case XC_LANGUAGE_KOREAN:
-    //    currentLocalisation = &korean;
-    //    break;
-    //case XC_LANGUAGE_SCHINESE:
-    //    currentLocalisation = &chinese_simplified;
-    //    break;
+    // === UNSUPPORTED NATIVE FONT WITHOUT NEW FONT METHOD ===
+    case XC_LANGUAGE_POLISH:
+        currentLocalisation = &polish;
+        break;
+    case XC_LANGUAGE_RUSSIAN:
+        currentLocalisation = &russian;
+        break;
+    case XC_LANGUAGE_KOREAN:
+        currentLocalisation = &korean;
+        break;
+    case XC_LANGUAGE_SCHINESE:
+        currentLocalisation = &chinese_simplified;
+        break;
     default:
         currentLocalisation = &english;
         break;
