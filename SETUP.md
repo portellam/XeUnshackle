@@ -3,10 +3,12 @@ XeUnshackle v1.08b - https://github.com/portellam/XeUnshackle
 Credits to the original author: https://github.com/Byrom90
 Original repository: https://github.com/Byrom90/XeUnshackle
 
-> [!DISCLAIMER]
-> THIS APP IS RELEASED AS IS.
-> YOU ARE RESPONSIBLE FOR WHAT YOU CHOOSE TO LOAD AND ANY NEGATIVE EFFECTS THAT MAY COME AS A RESULT.
-> THIS IS NOT A PERSISTENT SOFTMOD. YOUR CONSOLE WILL RETURN TO AN UNMODIFIED STATE WHEN POWERED OFF OR REBOOTED.
+> [!CAUTION]
+> **THIS APP IS RELEASED AS IS.**
+>
+> **YOU ARE RESPONSIBLE FOR WHAT YOU CHOOSE TO LOAD AND ANY NEGATIVE EFFECTS THAT MAY COME AS A RESULT.**
+>
+> **THIS IS NOT A PERSISTENT SOFTMOD. YOUR CONSOLE WILL RETURN TO AN UNMODIFIED STATE WHEN POWERED OFF OR REBOOTED.**
 
 ## Setup Instructions
 1. Setup your usb with the Xbox360BadUpdate files for your preferred game. Tutorials already exist for this.
