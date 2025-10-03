@@ -1,6 +1,7 @@
 XeUnshackle v1.08b - https://github.com/portellam/XeUnshackle
 
 Credits to the original author: https://github.com/Byrom90
+
 Original repository: https://github.com/Byrom90/XeUnshackle
 
 > [!CAUTION]
