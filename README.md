@@ -26,8 +26,10 @@ state when powered off or rebooted.
 > 3. **DO NOT REPLACE FILES IN FLASH!** This includes things like **replacing**
 the `bootanim`.
 > 4. **Avoid** using homebrew or plugins that make changes to Flash (the NAND).
-> 5. **Read** the [SETUP.MD] or `README - IMPORTANT.txt` in the release files for important
+> 5. **Read** the [SETUP.MD][100] or `README - IMPORTANT.txt` in the release files for important
 notes regarding the use of Stealth Servers.
+
+[100]: ./SETUP.md
 
 ## 2. How It Works
 Utilises the **alternate** method of using a specially crafted PeekPoke Hypervisor
