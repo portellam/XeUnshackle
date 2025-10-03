@@ -5,11 +5,11 @@
 Custom *Xbox 360* application designed to be used with the [Xbox360BadUpdate][001]
 exploit.
 
-[Download][002]
+Download [here.][002]
 
 [000]: ./Images/banner.gif
 [001]: https://github.com/grimdoomer/Xbox360BadUpdate
-[002]: https://github.cpm/portellam/XeUnshackle/releases/latest
+[002]: https://github.com/portellam/XeUnshackle/releases/latest
 
 ##
 ## 1. Disclaimers
