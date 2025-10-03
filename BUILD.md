@@ -10,6 +10,7 @@ To build XeUnshackle, you need a development environment on Windows, with:
     * Graphics Library
   * VS 2010 SP1 ([installer here](https://archive.org/details/vs-2010-sp-1dvd-1))
 * Install Xbox 360 SDK
+  * [Download here.](https://archive.org/details/xdkcollection)
   * Use `XDKSetupXenon21256.3.exe` or `XDKSetupXenon21256.17.exe`, choose Full install
   * Install this **after** VS 2010 and VS 2010 SP1
 * Visual Studio 2019 ([installer here](https://archive.org/download/vs_community__e8aae2bc1239469a8cb34a7eeb742747/vs_community_2019.exe)) or Visual Studio 2022
