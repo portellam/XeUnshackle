@@ -16,6 +16,7 @@
 //          Jeff Hamm - https://www.youtube.com/watch?v=PantVXVEVUg - Chain break video
 //          ikari - freeBOOT
 //          Xbox360Hub Discord #coding-corner
+//          Eaton - Bad Storage
 //          Anyone else who has contributed anything to the 360 scene. Apologies if any credits were missed.
 // 
 // Notes: 
@@ -37,6 +38,7 @@ WCHAR wTitleHeaderBuf[100];
 WCHAR wCPUKeyBuf[150];
 WCHAR wDVDKeyBuf[50];
 WCHAR wConTypeBuf[50];
+WCHAR wBadStorageStatusBuf[21];
 
 //--------------------------------------------------------------------------------------
 // Name: class Sample
@@ -324,6 +326,9 @@ HRESULT XeUnshackle::Render()
         // General info
         m_Font.DrawText(0, 70, YellowText, currentLocalisation->MainInfo);
 
+		// Bad Storage info
+		m_Font.DrawText(0, 260, YellowText, wBadStorageStatusBuf);
+
         // Dashlaunch Info
         m_Font.DrawText(0, 290, YellowText, wDLStatusBuf);
         if (bDLisLoaded)
@@ -355,6 +360,8 @@ HRESULT XeUnshackle::Render()
 
     return S_OK;
 }
+
+typedef BOOLEAN (*pfnBadStorageExecute)(PBOOLEAN RetailFormatted);
 
 //--------------------------------------------------------------------------------------
 // Name: main()
@@ -419,6 +426,33 @@ VOID __cdecl main()
         cprintf("[XeUnshackle] Stage 5 success!");
     }
     // Part 3 - We should only ever begin here for any subsequent launches of the app
+
+	//Execute Bad Storage. Must happen before loading Dashlaunch. This gives people the ability to use internal drives up to 2 TB.
+	//If something unusual happens, Bad Storage will pop an XNotify with more details and return FALSE.
+	//In cases where it is run with a retail-formatted drive, FALSE is returned, no XNotify is shown, and IsRetailFormatted is set to TRUE. FATXplorer 3.0 beta 36 has the Bad Storage formatting feature.
+	//TRUE is returned on successful execution. Bad Storage also checks for repeated executions internally, so there is no problem executing multiple times.
+	HMODULE bstorDLL = LoadLibrary("GAME:\\BadStorage.xex.dll");
+	ZeroMemory(wBadStorageStatusBuf, sizeof(wBadStorageStatusBuf));
+	if (bstorDLL != NULL)
+	{
+		BOOLEAN bstorIsRetailFormatted;
+		if (((pfnBadStorageExecute)GetProcAddress(bstorDLL, (LPCSTR)1))(&bstorIsRetailFormatted))
+		{
+			swprintf_s(wBadStorageStatusBuf, L"Bad Storage: Applied");
+			cprintf("[XeUnshackle] Bad Storage executed successfully");
+		}
+		else
+		{
+			swprintf_s(wBadStorageStatusBuf, L"Bad Storage: %s", bstorIsRetailFormatted ? L"Skipped" : L"Failed");
+			cprintf("[XeUnshackle] Bad Storage executed unsuccessfully");
+		}
+		FreeLibrary(bstorDLL);
+	}
+	else
+	{
+		swprintf_s(wBadStorageStatusBuf, L"Bad Storage: Missing");
+		cprintf("[XeUnshackle] BadStorage.xex.dll not found");
+	}
 
     // If Dashlaunch loaded successfully we can revert the patches done by BadUpdate. 
     // Needs to be like this due to Dashlaunch fixing Retail signed xex files that have been patched.
