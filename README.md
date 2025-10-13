@@ -31,6 +31,7 @@ Nothing here is particularly new. It's simply a collection of existing code that
 - Ability to dump 1BL to file via button press. This may be particularly useful for those wanting to use the Low Level [Xenon](https://github.com/xenon-emu/xenon) Emulator.
 - Automatic dumping of the current MAC address on first load. This is often changed by stealth servers during the initial KV spoofing. Only other way to retrieve the original is from a nand backup taken BEFORE loading a stealth.
 - Applies Usbdsec patches to allow non-360 XInput controllers. Thanks [InvoxiPlayGames](https://github.com/InvoxiPlayGames)
+- Xbox 360 Bad Storage support for unlocking up to 2 TB internal storage. Read the official release notes [Here](https://fatxplorer.eaton-works.com/bad-storage/) for setup instructions. Thanks [EatonZ](https://github.com/EatonZ)
 
 ## Usage
 #### Dashlaunch Plugin Loading:
@@ -51,6 +52,7 @@ Any files saved/dumped can be found in the BadUpdatePayload folder of the usb.
 - [ihatecompvir](https://github.com/ihatecompvir) - [DaTArrest save exploit](https://github.com/RBEnhanced/DaTArrest)
 - ikari - freeBOOT
 - [Jeff Hamm](https://www.youtube.com/watch?v=PantVXVEVUg) - Chain break video
+- [EatonZ](https://github.com/EatonZ) - [Xbox 360 Bad Storage](https://github.com/EatonZ/BadStorage)
 - [Xbox360Hub Discord #coding-corner](https://xbox360hub.com/)
 - Anyone else who has contributed anything to the 360 scene. Apologies if any credits were missed.
 

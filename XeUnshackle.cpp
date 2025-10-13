@@ -25,7 +25,7 @@
 
 #include "stdafx.h"
 
-FLOAT APP_VERS = 1.02;
+FLOAT APP_VERS = 1.03;
 
 const CHAR* g_strMovieName = "embed:\\VID";
 
