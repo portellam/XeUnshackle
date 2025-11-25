@@ -5,11 +5,11 @@
 Custom *Xbox 360* application designed to be used with the [Xbox360BadUpdate][001]
 exploit.
 
-[Download][002]
+Download [here.][002]
 
 [000]: ./Images/banner.gif
 [001]: https://github.com/grimdoomer/Xbox360BadUpdate
-[002]: https://github.cpm/portellam/XeUnshackle/releases/latest
+[002]: https://github.com/portellam/XeUnshackle/releases/latest
 
 ##
 ## 1. Disclaimers
@@ -26,8 +26,10 @@ state when powered off or rebooted.
 > 3. **DO NOT REPLACE FILES IN FLASH!** This includes things like **replacing**
 the `bootanim`.
 > 4. **Avoid** using homebrew or plugins that make changes to Flash (the NAND).
-> 5. **Read** the [SETUP.MD] or `README - IMPORTANT.txt` in the release files for important
+> 5. **Read** the [SETUP.MD][100] or `README - IMPORTANT.txt` in the release files for important
 notes regarding the use of Stealth Servers.
+
+[100]: ./SETUP.md
 
 ## 2. How It Works
 Utilises the **alternate** method of using a specially crafted PeekPoke Hypervisor
