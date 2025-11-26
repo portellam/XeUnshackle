@@ -48,16 +48,16 @@ has been adapted and packaged for use with this exploit.
 same exact patches that are usually applied when building a modified NAND image
 using xeBuild for RGH/JTAG consoles.
 
-- Support for both Retail and Devkit signed xex files. Essentially any plugins or
-executables that run natively on RGH/JTAG modified consoles _should_ work.
+- Support for both Retail and Devkit signed `.xex` files. Essentially any plugins
+or executables that run natively on RGH/JTAG modified consoles _should_ work.
 
 - Reverts any patches applied by the [Xbox360BadUpdate][300] exploit we no longer
 need.
 
-- Restores the default state of the Ring of Light and allows controller syncing to
-function as normal. Thanks [InvoxiPlayGames][301].
+- Restores the default state of the Ring of Light (RoL) and allows controller
+syncing to function as normal. Thanks [InvoxiPlayGames.][301]
 
-- Loads a slightly modified version of launch.xex (Dashlaunch). Due to it not
+- Loads a slightly modified version of `launch.xex` (Dashlaunch). Due to it not
 being stored within the NAND filesystem it is loaded from app memory and
 `lhelper.xex` is copied to either the Hard Disk Drive (HDD) or USB root depending
 on what is available at load time.
@@ -77,12 +77,18 @@ changed by stealth servers during the initial KV spoofing. Only other way to
 retrieve the original is from a NAND backup taken BEFORE loading a stealth.
 
 - Applies Usbdsec patches to allow *non-Xbox 360* XInput controllers.
-Thanks [InvoxiPlayGames][303]
+Thanks [InvoxiPlayGames.][303]
+
+- Xbox 360 Bad Storage support for unlocking up to 2 TiB internal storage.
+Read the [official release notes][305] for setup instructions.
+Thanks [EatonZ.][305]
 
 [300]: https://github.com/grimdoomer/Xbox360BadUpdate
 [301]: https://github.com/InvoxiPlayGames
 [302]: https://github.com/xenon-emu/xenon
 [303]: https://github.com/InvoxiPlayGames
+[304]: https://fatxplorer.eaton-works.com/bad-storage/
+[305]: https://github.com/EatonZ
 
 ## 4. Build instructions
 See [BUILD.md][400]
@@ -103,36 +109,41 @@ set when exiting the app and returning to the dashboard.
 Any files saved/dumped can be found in the `BadUpdatePayload` folder of the USB.
 
 ## 6. Credits
-- [grimdoomer][600] - [Xbox360BadUpdate][601] exploit
+In alphabetical order:
+
+- [EatonZ][600] - [Xbox 360 Bad Storage][601]
+- [grimdoomer][602] - [Xbox360BadUpdate][603] exploit
 - cOz - xeBuild patches, Dashlaunch and much more.
-- [Visual Studio / Goobycorp][602]
+- [Visual Studio / Goobycorp][604]
 - Diamond
-- [InvoxiPlayGames / Emma][603] - [FreeMyXe][604], [Usbdsec patches][605], Ring of Light fix, [DaTArrest save exploit][606] and general help.
-- [ihatecompvir][607] - [DaTArrest save exploit][606].
+- [InvoxiPlayGames / Emma][605] - [FreeMyXe][606], [Usbdsec patches][607], Ring of Light fix, [DaTArrest save exploit][608] and general help.
+- [ihatecompvir][608] - [DaTArrest save exploit][609].
 - ikari - freeBOOT
-- [Jeff Hamm][608] - Chain break video - [Xbox360Hub Discord #coding-corner][609]
-
-- [klofi][610] - Added Auto-Start feature and Build
+- [Jeff Hamm][610] - Chain break video - [Xbox360Hub Discord #coding-corner][611]
+- [klofi][612] - Added Auto-Start feature and Build
 instructions.
-
-- [SavageCore][611] - QA test and fix of the Chain break
+- [SavageCore][613] - QA test and fix of the Chain break
 video.
+- [Xbox360Hub Discord #coding-corner][614]
 
 - Anyone else who has contributed anything to the *Xbox 360* scene. Apologies if
 any credits were missed.
 
-[600]: https://github.com/grimdoomer
-[601]: https://github.com/grimdoomer/Xbox360BadUpdate
-[602]: https://github.com/GoobyCorp
-[603]: https://github.com/InvoxiPlayGames
-[604]: https://github.com/FreeMyXe
-[605]: https://github.com/InvoxiPlayGames/UsbdSecPatch
-[606]: https://github.com/RBEnhanced/DaTArrest
-[607]: https://github.com/ihatecompvir
-[608]: https://www.youtube.com/watch?v=PantVXVEVUg
-[609]: https://xbox360hub.com/
-[610]: https://github.com/klofi
-[611]: https://github.com/SavageCore
+[600]: https://github.com/EatonZ
+[601]: https://github.com/EatonZ/BadStorage
+[602]: https://github.com/grimdoomer
+[603]: https://github.com/grimdoomer/Xbox360BadUpdate
+[604]: https://github.com/GoobyCorp
+[605]: https://github.com/InvoxiPlayGames
+[606]: https://github.com/FreeMyXe
+[607]: https://github.com/InvoxiPlayGames/UsbdSecPatch
+[608]: https://github.com/RBEnhanced/DaTArrest
+[609]: https://github.com/ihatecompvir
+[610]: https://www.youtube.com/watch?v=PantVXVEVUg
+[611]: https://xbox360hub.com/
+[612]: https://github.com/klofi
+[613]: https://github.com/SavageCore
+[614]: https://xbox360hub.com/
 
 ## 7. Community Translations
 - Chinese (Simplified) - [firebirdjsb][701]
