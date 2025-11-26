@@ -1,5 +1,5 @@
 # XeUnshackle
-### v1.08
+### v1.09b
 ![XeUnshackle_Banner][000]
 
 Custom *Xbox 360* application designed to be used with the [Xbox360BadUpdate][001]
@@ -109,12 +109,11 @@ set when exiting the app and returning to the dashboard.
 Any files saved/dumped can be found in the `BadUpdatePayload` folder of the USB.
 
 ## 6. Credits
-In alphabetical order:
 
+- cOz - xeBuild patches, Dashlaunch and much more.
 - [EatonZ][600] - [Xbox 360 Bad Storage][601]
 - [grimdoomer][602] - [Xbox360BadUpdate][603] exploit
-- cOz - xeBuild patches, Dashlaunch and much more.
-- [Visual Studio / Goobycorp][604]
+- [Goobycorp][604]: Visual Studio build instructions.
 - Diamond
 - [InvoxiPlayGames / Emma][605] - [FreeMyXe][606], [Usbdsec patches][607], Ring of Light fix, [DaTArrest save exploit][608] and general help.
 - [ihatecompvir][608] - [DaTArrest save exploit][609].
