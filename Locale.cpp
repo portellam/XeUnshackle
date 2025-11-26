@@ -32,8 +32,8 @@ LocalisationMessages_t english = {
     L"Auto-Start saved to AutoStart.txt",
     L"Failed to save AutoStart.txt!",
     // Main Screen Text
-    L"All patches have now been applied!\nRegular JTAG/RGH functionality should now be possible on your system.\n\nTHIS IS NOT PERSISTENT!\nYour console will return to a completely stock unmodified state once shut down.\nIt is HIGHLY recommended that you now go dump a copy of your nand!",
-    L"Any plugins set in launch.ini will load when you exit this app.\nLiveBlock should be working now if enabled in the launch.ini.\nPlug in your ethernet cable before exiting to allow stealths to authenticate correctly.",
+    L"All patches have now been applied!\nRegular JTAG/RGH functionality should now be possible on this console.\n\nTHIS IS NOT PERSISTENT!\nYour console will return to a completely stock, unmodified state once shut down.\nIt is HIGHLY recommended to dump a copy of this console's NAND!",
+    L"Any plugins set in launch.ini should load after the exit of XeUnshackle.\nLiveBlock should be working now, if enabled in the launch.ini.\nPlug in an ethernet cable before exiting to allow stealth servers to authenticate correctly.",
     GLYPH_X_BUTTON L" Save info to file",
     GLYPH_Y_BUTTON L" Dump 1BL to file",
     L"Press " GLYPH_BACK_BUTTON L" to exit",

@@ -1,8 +1,8 @@
 # XeUnshackle
-### v1.08
+### v1.09b
 ![XeUnshackle_Banner][000]
 
-Custom *Xbox 360* application designed to be used with the [Xbox360BadUpdate][001]
+Custom Xbox 360 application designed to be used with the [Xbox360BadUpdate][001]
 exploit.
 
 Download [here.][002]
@@ -15,6 +15,7 @@ Download [here.][002]
 ## 1. Disclaimers
 
 > [!IMPORTANT]
+> **THIS PROJECT IS A FORK OF THE ORIGINAL.**
 > **THIS APP IS RELEASED AS IS.**
 > **YOU ARE RESPONSIBLE FOR WHAT YOU CHOOSE TO LOAD AND ANY NEGATIVE EFFECTS THAT MAY COME AS A RESULT.**
 > **THIS IS NOT A PERMANENT SOFTMOD!** Your console will return to an unmodified
@@ -109,41 +110,43 @@ set when exiting the app and returning to the dashboard.
 Any files saved/dumped can be found in the `BadUpdatePayload` folder of the USB.
 
 ## 6. Credits
-In alphabetical order:
 
-- [EatonZ][600] - [Xbox 360 Bad Storage][601]
-- [grimdoomer][602] - [Xbox360BadUpdate][603] exploit
+- [byrom90][600] - Original author of [XeUnshackle][601].
 - cOz - xeBuild patches, Dashlaunch and much more.
-- [Visual Studio / Goobycorp][604]
 - Diamond
-- [InvoxiPlayGames / Emma][605] - [FreeMyXe][606], [Usbdsec patches][607], Ring of Light fix, [DaTArrest save exploit][608] and general help.
-- [ihatecompvir][608] - [DaTArrest save exploit][609].
+- [EatonZ][602] - [Xbox 360 Bad Storage][603]
+- [grimdoomer][604] - [Xbox360BadUpdate][605] exploit
+- [Goobycorp][606]: Visual Studio build instructions.
+- [InvoxiPlayGames / Emma][607] - [FreeMyXe][608], [Usbdsec patches][609], Ring of Light fix, [DaTArrest save exploit][610] and general help.
+- [ihatecompvir][611] - [DaTArrest save exploit][610].
 - ikari - freeBOOT
-- [Jeff Hamm][610] - Chain break video - [Xbox360Hub Discord #coding-corner][611]
-- [klofi][612] - Added Auto-Start feature and Build
+- [Jeff Hamm][612] - Chain break video - [Xbox360Hub Discord #coding-corner][613]
+- [klofi][614] - Added Auto-Start feature and Build
 instructions.
-- [SavageCore][613] - QA test and fix of the Chain break
+- [SavageCore][615] - QA test and fix of the Chain break
 video.
-- [Xbox360Hub Discord #coding-corner][614]
+- [Xbox360Hub Discord #coding-corner][616]
 
 - Anyone else who has contributed anything to the *Xbox 360* scene. Apologies if
 any credits were missed.
 
-[600]: https://github.com/EatonZ
-[601]: https://github.com/EatonZ/BadStorage
-[602]: https://github.com/grimdoomer
-[603]: https://github.com/grimdoomer/Xbox360BadUpdate
-[604]: https://github.com/GoobyCorp
-[605]: https://github.com/InvoxiPlayGames
-[606]: https://github.com/FreeMyXe
-[607]: https://github.com/InvoxiPlayGames/UsbdSecPatch
-[608]: https://github.com/RBEnhanced/DaTArrest
-[609]: https://github.com/ihatecompvir
-[610]: https://www.youtube.com/watch?v=PantVXVEVUg
-[611]: https://xbox360hub.com/
-[612]: https://github.com/klofi
-[613]: https://github.com/SavageCore
-[614]: https://xbox360hub.com/
+[600]: https://github.com/byrom90
+[610]: https://github.com/byrom90/XeUnshackle
+[602]: https://github.com/EatonZ
+[603]: https://github.com/EatonZ/BadStorage
+[604]: https://github.com/grimdoomer
+[605]: https://github.com/grimdoomer/Xbox360BadUpdate
+[606]: https://github.com/GoobyCorp
+[607]: https://github.com/InvoxiPlayGames
+[608]: https://github.com/FreeMyXe
+[609]: https://github.com/InvoxiPlayGames/UsbdSecPatch
+[610]: https://github.com/RBEnhanced/DaTArrest
+[611]: https://github.com/ihatecompvir
+[612]: https://www.youtube.com/watch?v=PantVXVEVUg
+[613]: https://xbox360hub.com/
+[614]: https://github.com/klofi
+[615]: https://github.com/SavageCore
+[616]: https://xbox360hub.com/
 
 ## 7. Community Translations
 - Chinese (Simplified) - [firebirdjsb][701]

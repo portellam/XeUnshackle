@@ -6,17 +6,27 @@
 //          designed to run from hdd or usb root rather than flash (nand).
 //
 // Created by: Byrom
+// Forked by:  portellam
 // 
-// Credits: 
-//          grimdoomer - Xbox360BadUpdate exploit.
-//          cOz - Dashlaunch, xeBuild patches and much more.
-//          Visual Studio / GoobyCorp
+// Credits:
+//          byrom - Original author of XeUnshackle.
+//          cOz - xeBuild patches, Dashlaunchand much more.
 //          Diamond
-//          InvoxiPlayGames - FreeMyXe, Usbdsec patches, RoL restore and general help.
-//          Jeff Hamm - https://www.youtube.com/watch?v=PantVXVEVUg - Chain break video
+//          EatonZ - Xbox 360 Bad Storage
+//          grimdoomer - Xbox360BadUpdate exploit
+//          Goobycorp : Visual Studio build instructions.
+//          InvoxiPlayGames / Emma - FreeMyXe, Usbdsec patches, Ring of Light fix, DaTArrest save exploitand general help.
+//          ihatecompvir - DaTArrest save exploit.
 //          ikari - freeBOOT
-//          Xbox360Hub Discord #coding-corner
+//          Jeff Hamm - Chain break video: https://www.youtube.com/watch?v=PantVXVEVUg
+//          klofi - Added Auto - Start feature and Build instructions.
+//          SavageCore - QA test and fix of the Chain break video.
+//          Xbox360Hub Discord #coding - corner
 //          Anyone else who has contributed anything to the 360 scene. Apologies if any credits were missed.
+//
+//
+//
+
 // 
 // Notes: 
 //          This is basically what I came up with during initial testing so could prob be simplified & improved a lot.
@@ -24,7 +34,7 @@
 
 #include "stdafx.h"
 
-FLOAT APP_VERS = 1.03;
+FLOAT APP_VERS = 1.09;
 
 const CHAR* g_strMovieName = "embed:\\VID";
 
@@ -40,6 +50,7 @@ WCHAR wTitleHeaderBuf[100];
 WCHAR wCPUKeyBuf[150];
 WCHAR wDVDKeyBuf[50];
 WCHAR wConTypeBuf[50];
+WCHAR wBadStorageStatusBuf[21];
 
 //--------------------------------------------------------------------------------------
 // Name: class Sample
@@ -377,6 +388,9 @@ HRESULT XeUnshackle::Render()
         // General info
         m_Font.DrawText(0, 70, YellowText, currentLocalisation->MainInfo);
 
+		// Bad Storage info
+		m_Font.DrawText(0, 260, YellowText, wBadStorageStatusBuf);
+
         // Dashlaunch Info
         m_Font.DrawText(0, 290, YellowText, wDLStatusBuf);
         if (bDLisLoaded)
@@ -389,8 +403,8 @@ HRESULT XeUnshackle::Render()
         m_Font.DrawText(0, 490, YellowText, wCPUKeyBuf);
         m_Font.DrawText(0, 520, YellowText, wDVDKeyBuf);
 
-        m_Font.DrawText(0, 570, YellowText, L"https://github.com/Byrom90/XeUnshackle");
-        m_Font.DrawText(0, 600, YellowText, L"https://byrom.uk");
+        m_Font.DrawText(0, 570, YellowText, L"This Fork: https://github.com/portellam/XeUnshackle");
+        m_Font.DrawText(0, 600, YellowText, L"Original:  https://github.com/Byrom90/XeUnshackle");
         
         // If the timer is not active, draw the normal button prompts, otherwise draw the countdown text
         if (m_autoStartExitTimer < 0.0)
@@ -424,6 +438,8 @@ HRESULT XeUnshackle::Render()
 
     return S_OK;
 }
+
+typedef BOOLEAN (*pfnBadStorageExecute)(PBOOLEAN RetailFormatted);
 
 //--------------------------------------------------------------------------------------
 // Name: main()
@@ -488,6 +504,33 @@ VOID __cdecl main()
         cprintf("[XeUnshackle] Stage 5 success!");
     }
     // Part 3 - We should only ever begin here for any subsequent launches of the app
+
+	//Execute Bad Storage. Must happen before loading Dashlaunch. This gives people the ability to use internal drives up to 2 TB.
+	//If something unusual happens, Bad Storage will pop an XNotify with more details and return FALSE.
+	//In cases where it is run with a retail-formatted drive, FALSE is returned, no XNotify is shown, and IsRetailFormatted is set to TRUE. FATXplorer 3.0 beta 36 has the Bad Storage formatting feature.
+	//TRUE is returned on successful execution. Bad Storage also checks for repeated executions internally, so there is no problem executing multiple times.
+	HMODULE bstorDLL = LoadLibrary("GAME:\\BadStorage.xex.dll");
+	ZeroMemory(wBadStorageStatusBuf, sizeof(wBadStorageStatusBuf));
+	if (bstorDLL != NULL)
+	{
+		BOOLEAN bstorIsRetailFormatted;
+		if (((pfnBadStorageExecute)GetProcAddress(bstorDLL, (LPCSTR)1))(&bstorIsRetailFormatted))
+		{
+			swprintf_s(wBadStorageStatusBuf, L"Bad Storage: Applied");
+			cprintf("[XeUnshackle] Bad Storage executed successfully");
+		}
+		else
+		{
+			swprintf_s(wBadStorageStatusBuf, L"Bad Storage: %s", bstorIsRetailFormatted ? L"Skipped" : L"Failed");
+			cprintf("[XeUnshackle] Bad Storage executed unsuccessfully");
+		}
+		FreeLibrary(bstorDLL);
+	}
+	else
+	{
+		swprintf_s(wBadStorageStatusBuf, L"Bad Storage: Missing");
+		cprintf("[XeUnshackle] BadStorage.xex.dll not found");
+	}
 
     // If Dashlaunch loaded successfully we can revert the patches done by BadUpdate. 
     // Needs to be like this due to Dashlaunch fixing Retail signed xex files that have been patched.
