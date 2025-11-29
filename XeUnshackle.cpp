@@ -6,18 +6,27 @@
 //          designed to run from hdd or usb root rather than flash (nand).
 //
 // Created by: Byrom
+// Forked by:  portellam
 // 
-// Credits: 
-//          grimdoomer - Xbox360BadUpdate exploit.
-//          cOz - Dashlaunch, xeBuild patches and much more.
-//          Visual Studio / GoobyCorp
+// Credits:
+//          byrom - Original author of XeUnshackle.
+//          cOz - xeBuild patches, Dashlaunchand much more.
 //          Diamond
-//          InvoxiPlayGames - FreeMyXe, Usbdsec patches, RoL restore and general help.
-//          Jeff Hamm - https://www.youtube.com/watch?v=PantVXVEVUg - Chain break video
+//          EatonZ - Xbox 360 Bad Storage
+//          grimdoomer - Xbox360BadUpdate exploit
+//          Goobycorp : Visual Studio build instructions.
+//          InvoxiPlayGames / Emma - FreeMyXe, Usbdsec patches, Ring of Light fix, DaTArrest save exploitand general help.
+//          ihatecompvir - DaTArrest save exploit.
 //          ikari - freeBOOT
-//          Xbox360Hub Discord #coding-corner
-//          Eaton - Bad Storage
+//          Jeff Hamm - Chain break video: https://www.youtube.com/watch?v=PantVXVEVUg
+//          klofi - Added Auto - Start feature and Build instructions.
+//          SavageCore - QA test and fix of the Chain break video.
+//          Xbox360Hub Discord #coding - corner
 //          Anyone else who has contributed anything to the 360 scene. Apologies if any credits were missed.
+//
+//
+//
+
 // 
 // Notes: 
 //          This is basically what I came up with during initial testing so could prob be simplified & improved a lot.
@@ -25,7 +34,7 @@
 
 #include "stdafx.h"
 
-FLOAT APP_VERS = 1.03;
+FLOAT APP_VERS = 1.09;
 
 const CHAR* g_strMovieName = "embed:\\VID";
 
@@ -394,8 +403,8 @@ HRESULT XeUnshackle::Render()
         m_Font.DrawText(0, 490, YellowText, wCPUKeyBuf);
         m_Font.DrawText(0, 520, YellowText, wDVDKeyBuf);
 
-        m_Font.DrawText(0, 570, YellowText, L"https://github.com/Byrom90/XeUnshackle");
-        m_Font.DrawText(0, 600, YellowText, L"https://byrom.uk");
+        m_Font.DrawText(0, 570, YellowText, L"This Fork: https://github.com/portellam/XeUnshackle");
+        m_Font.DrawText(0, 600, YellowText, L"Original:  https://github.com/Byrom90/XeUnshackle");
         
         // If the timer is not active, draw the normal button prompts, otherwise draw the countdown text
         if (m_autoStartExitTimer < 0.0)
